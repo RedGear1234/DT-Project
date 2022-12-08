@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>DTProject</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- --nav--  -->
+    <nav class="navbar">
+      <div id="logo" style="margin-left: 1rem">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <ul class="nav-ul">
+        <li id="home-nav">
+          <a href="/"></a>
+        </li>
+        <li id="tool-nav">
+          <a href="/"></a>
+        </li>
+        <li id="bell-nav">
+          <a href="/"></a>
+        </li>
+        <li id="profile-nav">
+          <a href="/"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- --sidebar--  -->
+    <div class="container-sidebar-collapsed">
+      <div class="sidebar-menu">
+        <h3>Jouery Board</h3>
+        <button style="background: none" id="hamburger-menu">
+          <img src="./images/menu.svg" alt="" />
+        </button>
+      </div>
+      <ul class="sidebar-ul">
+        <h2>1. demo task</h2>
+        <hr />
+        <li class="tab isActive">
+          <a data-switcher data-tab="1">task heading 1</a>
+        </li>
+        <hr />
+        <li class="tab"><a data-switcher data-tab="2">task heading 2</a></li>
+        <hr />
+        <li class="tab"><a data-switcher data-tab="3">task heading 3</a></li>
+        <hr />
+        <li class="tab"><a data-switcher data-tab="4">task heading 4</a></li>
+        <hr />
+        <li class="tab"><a data-switcher data-tab="5">task heading 5</a></li>
+        <hr />
+        <li class="tab"><a data-switcher data-tab="6">task heading 6</a></li>
+        <hr />
+        <li class="tab"><a data-switcher data-tab="7">task heading 7</a></li>
+      </ul>
+    </div>
+
+    <div class="title">
+      <p>You Are taking Challenges Of New Project</p>
+    </div>
+
+    <!-- main  -->
+    <main id="main">
+      <h4>demo task</h4>
+
+      <section class="sectionOne">
+        <div
+          id="task_heading_One"
+          class="assets-section is-Active"
+          data-page="1"
+        >
+          <header></header>
+          <details>
+            <summary>
+              <p></p>
+              <span class="icon">
+                <img src="./images/arrowDown.svg" alt="" />
+              </span>
+            </summary>
+            <p></p>
+          </details>
+        </div>
+
+        <div id="task_heading_Two" class="assets-section" data-page="2">
+          <header>Task Heading 2</header>
+
+          <details>
+            <summary class="summary-task-two">
+              <h3 class="thread-A">Thread A</h3>
+              <span class="icon2">
+                <img src="./images/arrowDown.svg" alt="dropdown" />
+              </span>
+            </summary>
+            <div class="sub-section">
+              <div id="subthread" class="subinput">
+                <label for="text">Sub thread 1</label> <br />
+                <input type="text" placeholder="Enter Text Here" />
+              </div>
+              <div id="subinter" class="subinput">
+                <label for="text">Sub thread 2</label> <br />
+                <input type="text" placeholder="Enter Text Here" />
+              </div>
+            </div>
+
+            <div class="dropdown-section">
+              <form>
+                <select>
+                  <option for="">Select Category</option>
+                  <option value="BMW">BMW</option>
+                  <option value="Mercedes">Mercedes</option>
+                  <option value="Audi">Audi</option>
+                  <option value="Skoda">Skoda</option>
+                </select>
+              </form>
+              <form>
+                <select>
+                  <option for="">Select Process</option>
+                  <option value="BMW">BMW</option>
+                  <option value="Mercedes">Mercedes</option>
+                  <option value="Audi">Audi</option>
+                  <option value="Skoda">Skoda</option>
+                </select>
+              </form>
+            </div>
+
+            <button class="btn-thread-small">+ Sub Thread</button>
+
+            <div class="summary-section">
+              <label for="summary">Summary for Thread A </label> <br />
+              <input type="text" name="summary" placeholder="Enter Text Here" />
+            </div>
+
+            <div class="thread-credit">
+              <p>Thread Credit</p>
+              <form>
+                <select>
+                  <option for="">Select Emotion</option>
+                  <option value="BMW">BMW</option>
+                  <option value="Mercedes">Mercedes</option>
+                  <option value="Audi">Audi</option>
+                  <option value="Skoda">Skoda</option>
+                </select>
+              </form>
+            </div>
+            <div>
+              <button class="btn-thread-big">+ New Thread</button> <br />
+              <button class="btn-save">
+                <img src="./images/save.svg" alt="" />
+              </button>
+            </div>
+            <p id="task_heading_p"></p>
+          </details>
+        </div>
+      </section>
+
+      <section class="sectionTwo">
+        <div id="task_heading_Three" class="assets-section" data-page="3">
+          <header>Task Heading 3</header>
+          <details>
+            <summary>
+              <div class="task-three-input">
+                <input
+                  type="text"
+                  placeholder="Refeclects as per giver guidelines"
+                />
+              </div>
+              <span class="icon"
+                ><img src="./images/arrowDown.svg" alt="arrowDown"
+              /></span>
+            </summary>
+            <p id="task-heading-three-p"></p>
+          </details>
+        </div>
+       
+        <div id="task_heading_four" class="assets-section" data-page="4">
+          <header>Task Heading 4</header>
+          <details>
+            <summary id="task-heading-summary-four">
+              <div class="frame-div">
+                <iframe
+                  src="./pdf/bigpdf.pdf"
+                  frameborder="0"
+                  zoom
+                  pages
+                  id="pdf-viewer"
+                ></iframe>
+              </div>
+              <span class="icon3"
+                ><img src="./images/arrowDown.svg" alt="arrowDown"
+              /></span>
+            </summary>
+            <p id="task-heading-four-p"></p>
+          </details>
+        </div>
+      </section>
+
+      <section class="sectionThree">
+        <div id="task_heading_five" class="assets-section" data-page="5">
+          <header>Task heading 5</header>
+           <details>
+            <summary class="summary-task-two">
+              <div class="thread-A">
+                <h3>Intoduction</h3>
+              </div>
+              <span class="icon2">
+                <img src="./images/arrowDown.svg" alt="dropdown" />
+              </span>
+            </summary>
+            <div class="task-heading-five-input">
+              <input type="text" placeholder="Enter Introduction" />
+            </div>
+          </details>
+          <details>
+            <summary class="summary-task-two">
+              <div class="thread-A">
+                <h3>Thread A</h3>
+              </div>
+              <span class="icon2">
+                <img src="./images/arrowDown.svg" alt="dropdown" />
+              </span>
+            </summary>
+            <div class="task-heading-five-thread-A">
+              <div class="task-heading-five-input-div">
+                <label for="">Example 1</label> <br />
+                <input type="text" placeholder="Enter Text Here" />
+              </div>
+              <button class="btn-thread-example">+ Example</button>
+              <div class="task-heading-five-input-div">
+                <label for="">Argument for Thread A</label> <br />
+                <input type="text" placeholder="Enter Text Here" />
+              </div>
+              <button id="task-five-threa-a-btn">+ New Thread</button>
+            </div>
+          </details>
+
+          <details>
+            <summary class="summary-task-two">
+              <div class="thread-A">
+                <h3>Conclusion</h3>
+              </div>
+              <span class="icon2">
+                <img src="./images/arrowDown.svg" alt="dropdown" />
+              </span>
+            </summary>
+            <div class="task-heading-five-input">
+              <input type="text" placeholder="Enter Introduction" />
+            </div>
+            <button class="btn-save">
+              <img src="./images/save.svg" alt="" />
+            </button>
+          </details>
+        </div>
+
+        <div id="task_heading_six" class="assets-section" data-page="6">
+          <header>Task heading 6</header>
+          <details>
+            <summary class="summary-task-two">
+              <div id="audio-div">
+                <audio src="./audio/Blank.mp3" controls></audio>
+              </div>
+              <span class="icon2">
+                <img src="./images/arrowDown.svg" alt="dropdown" />
+              </span>
+            </summary>
+            <p id="task-heading-six-p">
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <div id="task_heading_seven" class="assets-section" data-page="7">
+        <header>Task heading 7</header>
+        <iframe
+          id="iframe"
+          width="500"
+          height="300"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <button id="btn-submit-end">Submit</button>
+    </main>
+    <!-- ---- main end  -->
+  </body>
+  <script src="./app.js"></script>
+</html>
